@@ -1,0 +1,600 @@
+@import "./color.less";
+@import "./var.less";
+@import "./font.less";
+
+body {
+    background-color: @color3;
+    font-family     : sharp sans-serif;
+    margin          : @var0;
+    padding         : @var0;
+    height          : @var10;
+
+}
+
+.dropdown {
+    margin: @var0 auto;
+    float : left;
+}
+
+nav {
+    height    : @var1;
+    background: @color3;
+    box-sizing: @var0 @var2 @var3 rgba(0, 0, 0, 0.1);
+    width     : @var10;
+
+    ul {
+        padding: @var0;
+        margin : @var0;
+        float  : right;
+
+
+        li {
+            background: @color3;
+            position  : relative;
+            list-style: none;
+            display   : inline-block;
+            color     : @color3;
+
+            a {
+                display        : block;
+                padding        : @var0 @var3;
+                color          : @color4;
+                text-decoration: none;
+                line-height    : @var1;
+                font-size      : @var8;
+                font-size      : @var3;
+                font-weight    : bold;
+
+
+
+            }
+
+            // ul {
+            //     position: absolute;
+            //     top     : @var1;
+            //     // display : none;
+            // }
+
+        }
+    }
+}
+
+.drop {
+    height              : @var10;
+    position            : fixed;
+    left                : @var0;
+    background          : @color7;
+    // padding-top   : @var8;
+    width               : @var32;
+    display             : none;
+    // cursor           : pointer;
+    margin-top          : 2px;
+
+
+
+
+    li {
+        // padding-bottom: @var21;
+        // list-style    : none;
+        // margin-bottom : @var3;
+        background : @color7 ;
+        line-height: @var34;
+        left       : @var35;
+        color      : @color6;
+
+        // display: none;
+
+        hr {
+            color        : orange;
+            margin-bottom: -23px;
+            margin-top   : 33px;
+            width        : 15px;
+            /* left      : 108px; */
+            position     : relative;
+            right        : 110px;
+        }
+
+        .sol-sidemenuconent {
+
+            .angleright {
+                float    : right;
+                /* bottom: -5px; */
+                top      : 11px;
+                position : relative;
+                left     : 55px;
+            }
+
+
+            .sol-payments {
+                width   : @var23;
+                position: absolute;
+                top     : @var37;
+                left    : @var23;
+                color   : @color7;
+                display : none;
+
+                .line {
+                    position: relative;
+                    right   : 191px;
+                }
+
+
+                .Payment-div1 .sol-sub1-payments {
+
+                    p {
+                        line-height: @var38;
+                        font-weight: lighter;
+                        color      : @color4;
+                    }
+
+                    h3 {
+                        color      : @color10;
+                        line-height: @var4;
+                        margin     : @var0;
+
+                        i {
+                            color: orange;
+                        }
+                    }
+                }
+
+                .Payment-div2 {
+                    width   : @var32;
+                    position: absolute;
+                    top     : @var41;
+                    left    : @var43;
+                    color   : @color7;
+
+                    p {
+                        line-height: 18px;
+                        font-weight: lighter;
+                        color      : black;
+                    }
+
+                    h3 {
+                        color      : deepskyblue;
+                        line-height: 5px;
+                        margin     : 0px;
+
+                        i {
+                            color: orange;
+                        }
+                    }
+                }
+
+                .Payment-div3 {
+                    width   : 400px;
+                    position: absolute;
+                    top     : 19%;
+                    left    : 548px;
+
+                    .Payment-div3-div1 {
+                        position: relative;
+                        bottom  : 50px;
+                        left    : 227px;
+                        // color: deepskyblue;
+                    }
+
+                    .Payment-div3-div2 {
+                        position        : relative;
+                        bottom          : 40px;
+                        height          : 255px;
+                        background-color: #f1eded;
+                        width           : 70%;
+                    }
+
+                    p {
+                        line-height: 5px;
+                        font-weight: lighter;
+                        color      : black;
+                        position   : relative;
+                        left       : 31px;
+                    }
+
+                    h3 {
+                        color      : deepskyblue;
+                        line-height: 0px;
+                        margin     : 0px;
+                        left       : 32px;
+                        position   : relative;
+
+                        i {
+                            color: orange;
+                        }
+                    }
+
+                }
+
+            }
+
+            //for commerce
+            .sol-commerce {
+                width   : @var23;
+                position: absolute;
+                top     : @var37;
+                left    : @var23;
+                color   : @color7;
+                display : none;
+
+                .line {
+                    position: relative;
+                    right   : 191px;
+                }
+
+
+
+                .Commerce-div1 .sol-sub1-commerce {
+
+                    p {
+                        line-height: @var38;
+                        font-weight: lighter;
+                        color      : @color4;
+                    }
+
+                    h3 {
+                        color      : @color10;
+                        line-height: @var4;
+                        margin     : @var0;
+
+                        i {
+                            color: orange;
+                        }
+                    }
+                }
+
+                .Commerce-div3 {
+                    width           : 400px;
+                    // position: absolute;
+                    // top     : 19%;
+                    left            : 548px;
+                    position        : relative;
+                    /* top          : 16px; */
+                    /* margin-bottom: 3px; */
+                    bottom          : 90px;
+
+                    .Commerce-div3-div1 {
+                        position: relative;
+                        bottom  : 50px;
+                        left    : 227px;
+                        // color: deepskyblue;
+                    }
+
+                    .Commerce-div3-div2 {
+                        position        : relative;
+                        bottom          : 40px;
+                        height          : 255px;
+                        background-color: #f1eded;
+                        width           : 70%;
+                    }
+
+                    p {
+                        line-height: 5px;
+                        font-weight: lighter;
+                        color      : black;
+                        position   : relative;
+                        left       : 31px;
+                    }
+
+                    h3 {
+                        color      : deepskyblue;
+                        line-height: 0px;
+                        margin     : 0px;
+                        left       : 32px;
+                        position   : relative;
+
+                        i {
+                            color: orange;
+                        }
+                    }
+
+                }
+
+
+            }
+
+            &:hover {
+                color: @color9;
+
+            }
+
+            // a {
+            //     color  : @color3;
+            //     display: block;
+            // }
+        }
+
+    }
+}
+
+.drop2 {
+    height              : @var10;
+    position            : fixed;
+    left                : @var0;
+    background          : @color7;
+    // padding-top   : @var8;
+    width               : @var32;
+    display             : none;
+    // cursor           : pointer;
+    margin-top          : 2px;
+
+
+
+
+    li {
+        // padding-bottom: @var21;
+        // list-style    : none;
+        // margin-bottom : @var3;
+        background : @color7 ;
+        line-height: @var34;
+        left       : @var35;
+        color      : @color6;
+
+        // display: none;
+
+        hr {
+            color        : orange;
+            margin-bottom: -23px;
+            margin-top   : 33px;
+            width        : 15px;
+            /* left      : 108px; */
+            position     : relative;
+            right        : 60px;
+        }
+
+        .res-sidemenuconent {
+            .angleright {
+                float    : right;
+                /* bottom: -5px; */
+                top      : 13px;
+                position : relative;
+                left     : 147px;
+            }
+
+
+            .res-payments {
+                width   : @var23;
+                position: absolute;
+                top     : @var37;
+                left    : @var23;
+                color   : @color7;
+                display : none;
+
+                .line {
+                    position: relative;
+                    right   : 191px;
+                }
+
+
+                .Resource-div1 .res-sub1-resources {
+
+                    bottom  : 3px;
+                    /* top  : 0px; */
+                    position: relative;
+
+                    p {
+                        line-height: @var38;
+                        font-weight: lighter;
+                        color      : @color4;
+                        position   : relative;
+                        top        : -6px;
+                    }
+
+                    h3 {
+                        color      : @color10;
+                        line-height: 17px;
+                        margin     : @var0;
+
+                        i {
+                            color: orange;
+                        }
+                    }
+                }
+
+                .Resource-div2 {
+                    width   : @var32;
+                    position: absolute;
+                    top     : @var41;
+                    left    : @var43;
+                    color   : @color7;
+
+                    p {
+                        line-height: 18px;
+                        font-weight: lighter;
+                        color      : black;
+                    }
+
+                    h3 {
+                        color      : deepskyblue;
+                        line-height: 5px;
+                        margin     : 0px;
+
+                        i {
+                            color: orange;
+                        }
+                    }
+                }
+
+                .Resource-div3 {
+                    width   : 400px;
+                    position: absolute;
+                    top     : 19%;
+                    left    : 548px;
+
+                    .Resource-div3-div1 {
+                        position: relative;
+                        bottom  : 50px;
+                        left    : 227px;
+                        // color: deepskyblue;
+                    }
+
+                    .Resource-div3-div2 {
+                        position        : relative;
+                        bottom          : 40px;
+                        height          : 255px;
+                        background-color: #f1eded;
+                        width           : 70%;
+                    }
+
+                    p {
+                        line-height: 5px;
+                        font-weight: lighter;
+                        color      : black;
+                        position   : relative;
+                        left       : 31px;
+                    }
+
+                    h3 {
+                        color      : deepskyblue;
+                        line-height: 0px;
+                        margin     : 0px;
+                        left       : 32px;
+                        position   : relative;
+
+                        i {
+                            color: orange;
+                        }
+                    }
+
+                }
+
+            }
+
+            //for commerce
+
+
+            &:hover {
+                color: @color9;
+
+            }
+
+            // a {
+            //     color  : @color3;
+            //     display: block;
+            // }
+        }
+
+    }
+}
+
+.drop3 {
+    height     : @var10;
+    // width: @var19; /* Set the width of the sidebar */
+    position   : fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    // top: @var3; /* Stay at the top */
+    left       : @var0;
+    background : @color7;
+    padding-top: @var8;
+    width      : @var22;
+    display    : none;
+    cursor     : pointer;
+
+    li {
+        // padding-bottom: @var21;
+        // list-style    : none;
+        // // margin-bottom : @var3;
+        background: @color7 ;
+
+        // display: none;
+        &:hover {
+            background-color: @color8;
+        }
+
+        a {
+            color  : @color3;
+            display: block;
+        }
+    }
+}
+
+
+.solution {
+    position: relative;
+    display : inline-block;
+
+
+}
+
+.first:hover .drop {
+    display: block;
+}
+
+.second:hover .drop2 {
+    display: block;
+}
+
+.third:hover .drop3 {
+    display: block;
+}
+
+
+.content {
+    width   : @var32;
+    position: absolute;
+    top     : @var37;
+    left    : @var32;
+    color   : @color7;
+
+    .line {
+        position: relative;
+        right   : 191px;
+    }
+
+    p {
+        color      : @color4;
+        font-weight: lighter;
+        // padding: @var7;
+        max-width  : @var39;
+        font-size  : @var38;
+        line-height: @var40;
+    }
+
+    h1 {
+        color         : @color7;
+        font-weight   : bold;
+        // font-family: sans-serif;
+    }
+
+}
+
+.logo {
+    padding: @var3 @var13 @var14 @var33;
+    width  : @var6;
+    height : auto;
+}
+
+.secondnav {
+
+    // color: @color4;
+    box-shadow: 1px 2px #e8e5e5;
+
+
+    ul {
+        position: relative;
+        right   : @var12;
+    }
+}
+
+//Media Queries................................
+
+//for mobile  small:320
+
+@media (min-width:320px)
+{
+.logo
+{
+    padding: 15px 17px 6px 10px;
+
+}
+
+.secondnav nav ul li {
+    position: relative;
+    left: 150px;
+    bottom: 182px;
+}
+
+}
+
+
+
+

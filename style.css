@@ -1,0 +1,414 @@
+body {
+  background-color: white;
+  font-family: sharp sans-serif;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+.dropdown {
+  margin: 0px auto;
+  float: left;
+}
+nav {
+  height: 60px;
+  background: white;
+  box-sizing: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+nav ul {
+  padding: 0px;
+  margin: 0px;
+  float: right;
+}
+nav ul li {
+  background: white;
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  color: white;
+}
+nav ul li a {
+  display: block;
+  padding: 0px 15px;
+  color: black;
+  text-decoration: none;
+  line-height: 60px;
+  font-size: 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.drop {
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  background: #0a0347;
+  width: 400px;
+  display: none;
+  margin-top: 2px;
+}
+.drop li {
+  background: #0a0347;
+  line-height: 40px;
+  left: 50px;
+  color: #888888;
+}
+.drop li hr {
+  color: orange;
+  margin-bottom: -23px;
+  margin-top: 33px;
+  width: 15px;
+  /* left      : 108px; */
+  position: relative;
+  right: 110px;
+}
+.drop li .sol-sidemenuconent .angleright {
+  float: right;
+  /* bottom: -5px; */
+  top: 11px;
+  position: relative;
+  left: 55px;
+}
+.drop li .sol-sidemenuconent .sol-payments {
+  width: 400px;
+  position: absolute;
+  top: 1%;
+  left: 400px;
+  color: #0a0347;
+  display: none;
+}
+.drop li .sol-sidemenuconent .sol-payments .line {
+  position: relative;
+  right: 191px;
+}
+.drop li .sol-sidemenuconent .sol-payments .Payment-div1 .sol-sub1-payments p {
+  line-height: 18px;
+  font-weight: lighter;
+  color: black;
+}
+.drop li .sol-sidemenuconent .sol-payments .Payment-div1 .sol-sub1-payments h3 {
+  color: deepskyblue;
+  line-height: 5px;
+  margin: 0px;
+}
+.drop li .sol-sidemenuconent .sol-payments .Payment-div1 .sol-sub1-payments h3 i {
+  color: orange;
+}
+.drop li .sol-sidemenuconent .sol-payments .Payment-div2 {
+  width: 400px;
+  position: absolute;
+  top: 19%;
+  left: 274px;
+  color: #0a0347;
+}
+.drop li .sol-sidemenuconent .sol-payments .Payment-div2 p {
+  line-height: 18px;
+  font-weight: lighter;
+  color: black;
+}
+.drop li .sol-sidemenuconent .sol-payments .Payment-div2 h3 {
+  color: deepskyblue;
+  line-height: 5px;
+  margin: 0px;
+}
+.drop li .sol-sidemenuconent .sol-payments .Payment-div2 h3 i {
+  color: orange;
+}
+.drop li .sol-sidemenuconent .sol-payments .Payment-div3 {
+  width: 400px;
+  position: absolute;
+  top: 19%;
+  left: 548px;
+}
+.drop li .sol-sidemenuconent .sol-payments .Payment-div3 .Payment-div3-div1 {
+  position: relative;
+  bottom: 50px;
+  left: 227px;
+}
+.drop li .sol-sidemenuconent .sol-payments .Payment-div3 .Payment-div3-div2 {
+  position: relative;
+  bottom: 40px;
+  height: 255px;
+  background-color: #f1eded;
+  width: 70%;
+}
+.drop li .sol-sidemenuconent .sol-payments .Payment-div3 p {
+  line-height: 5px;
+  font-weight: lighter;
+  color: black;
+  position: relative;
+  left: 31px;
+}
+.drop li .sol-sidemenuconent .sol-payments .Payment-div3 h3 {
+  color: deepskyblue;
+  line-height: 0px;
+  margin: 0px;
+  left: 32px;
+  position: relative;
+}
+.drop li .sol-sidemenuconent .sol-payments .Payment-div3 h3 i {
+  color: orange;
+}
+.drop li .sol-sidemenuconent .sol-commerce {
+  width: 400px;
+  position: absolute;
+  top: 1%;
+  left: 400px;
+  color: #0a0347;
+  display: none;
+}
+.drop li .sol-sidemenuconent .sol-commerce .line {
+  position: relative;
+  right: 191px;
+}
+.drop li .sol-sidemenuconent .sol-commerce .Commerce-div1 .sol-sub1-commerce p {
+  line-height: 18px;
+  font-weight: lighter;
+  color: black;
+}
+.drop li .sol-sidemenuconent .sol-commerce .Commerce-div1 .sol-sub1-commerce h3 {
+  color: deepskyblue;
+  line-height: 5px;
+  margin: 0px;
+}
+.drop li .sol-sidemenuconent .sol-commerce .Commerce-div1 .sol-sub1-commerce h3 i {
+  color: orange;
+}
+.drop li .sol-sidemenuconent .sol-commerce .Commerce-div3 {
+  width: 400px;
+  left: 548px;
+  position: relative;
+  /* top          : 16px; */
+  /* margin-bottom: 3px; */
+  bottom: 90px;
+}
+.drop li .sol-sidemenuconent .sol-commerce .Commerce-div3 .Commerce-div3-div1 {
+  position: relative;
+  bottom: 50px;
+  left: 227px;
+}
+.drop li .sol-sidemenuconent .sol-commerce .Commerce-div3 .Commerce-div3-div2 {
+  position: relative;
+  bottom: 40px;
+  height: 255px;
+  background-color: #f1eded;
+  width: 70%;
+}
+.drop li .sol-sidemenuconent .sol-commerce .Commerce-div3 p {
+  line-height: 5px;
+  font-weight: lighter;
+  color: black;
+  position: relative;
+  left: 31px;
+}
+.drop li .sol-sidemenuconent .sol-commerce .Commerce-div3 h3 {
+  color: deepskyblue;
+  line-height: 0px;
+  margin: 0px;
+  left: 32px;
+  position: relative;
+}
+.drop li .sol-sidemenuconent .sol-commerce .Commerce-div3 h3 i {
+  color: orange;
+}
+.drop li .sol-sidemenuconent:hover {
+  color: orange;
+}
+.drop2 {
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  background: #0a0347;
+  width: 400px;
+  display: none;
+  margin-top: 2px;
+}
+.drop2 li {
+  background: #0a0347;
+  line-height: 40px;
+  left: 50px;
+  color: #888888;
+}
+.drop2 li hr {
+  color: orange;
+  margin-bottom: -23px;
+  margin-top: 33px;
+  width: 15px;
+  /* left      : 108px; */
+  position: relative;
+  right: 60px;
+}
+.drop2 li .res-sidemenuconent .angleright {
+  float: right;
+  /* bottom: -5px; */
+  top: 13px;
+  position: relative;
+  left: 147px;
+}
+.drop2 li .res-sidemenuconent .res-payments {
+  width: 400px;
+  position: absolute;
+  top: 1%;
+  left: 400px;
+  color: #0a0347;
+  display: none;
+}
+.drop2 li .res-sidemenuconent .res-payments .line {
+  position: relative;
+  right: 191px;
+}
+.drop2 li .res-sidemenuconent .res-payments .Resource-div1 .res-sub1-resources {
+  bottom: 3px;
+  /* top  : 0px; */
+  position: relative;
+}
+.drop2 li .res-sidemenuconent .res-payments .Resource-div1 .res-sub1-resources p {
+  line-height: 18px;
+  font-weight: lighter;
+  color: black;
+  position: relative;
+  top: -6px;
+}
+.drop2 li .res-sidemenuconent .res-payments .Resource-div1 .res-sub1-resources h3 {
+  color: deepskyblue;
+  line-height: 17px;
+  margin: 0px;
+}
+.drop2 li .res-sidemenuconent .res-payments .Resource-div1 .res-sub1-resources h3 i {
+  color: orange;
+}
+.drop2 li .res-sidemenuconent .res-payments .Resource-div2 {
+  width: 400px;
+  position: absolute;
+  top: 19%;
+  left: 274px;
+  color: #0a0347;
+}
+.drop2 li .res-sidemenuconent .res-payments .Resource-div2 p {
+  line-height: 18px;
+  font-weight: lighter;
+  color: black;
+}
+.drop2 li .res-sidemenuconent .res-payments .Resource-div2 h3 {
+  color: deepskyblue;
+  line-height: 5px;
+  margin: 0px;
+}
+.drop2 li .res-sidemenuconent .res-payments .Resource-div2 h3 i {
+  color: orange;
+}
+.drop2 li .res-sidemenuconent .res-payments .Resource-div3 {
+  width: 400px;
+  position: absolute;
+  top: 19%;
+  left: 548px;
+}
+.drop2 li .res-sidemenuconent .res-payments .Resource-div3 .Resource-div3-div1 {
+  position: relative;
+  bottom: 50px;
+  left: 227px;
+}
+.drop2 li .res-sidemenuconent .res-payments .Resource-div3 .Resource-div3-div2 {
+  position: relative;
+  bottom: 40px;
+  height: 255px;
+  background-color: #f1eded;
+  width: 70%;
+}
+.drop2 li .res-sidemenuconent .res-payments .Resource-div3 p {
+  line-height: 5px;
+  font-weight: lighter;
+  color: black;
+  position: relative;
+  left: 31px;
+}
+.drop2 li .res-sidemenuconent .res-payments .Resource-div3 h3 {
+  color: deepskyblue;
+  line-height: 0px;
+  margin: 0px;
+  left: 32px;
+  position: relative;
+}
+.drop2 li .res-sidemenuconent .res-payments .Resource-div3 h3 i {
+  color: orange;
+}
+.drop2 li .res-sidemenuconent:hover {
+  color: orange;
+}
+.drop3 {
+  height: 100%;
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  left: 0px;
+  background: #0a0347;
+  padding-top: 20px;
+  width: 200px;
+  display: none;
+  cursor: pointer;
+}
+.drop3 li {
+  background: #0a0347;
+}
+.drop3 li:hover {
+  background-color: red;
+}
+.drop3 li a {
+  color: white;
+  display: block;
+}
+.solution {
+  position: relative;
+  display: inline-block;
+}
+.first:hover .drop {
+  display: block;
+}
+.second:hover .drop2 {
+  display: block;
+}
+.third:hover .drop3 {
+  display: block;
+}
+.content {
+  width: 400px;
+  position: absolute;
+  top: 1%;
+  left: 400px;
+  color: #0a0347;
+}
+.content .line {
+  position: relative;
+  right: 191px;
+}
+.content p {
+  color: black;
+  font-weight: lighter;
+  max-width: 412px;
+  font-size: 18px;
+  line-height: 24px;
+}
+.content h1 {
+  color: #0a0347;
+  font-weight: bold;
+}
+.logo {
+  padding: 15px 26px 6px 25px;
+  width: 150px;
+  height: auto;
+}
+.secondnav {
+  box-shadow: 1px 2px #e8e5e5;
+}
+.secondnav ul {
+  position: relative;
+  right: 130px;
+}
+@media (min-width: 320px) {
+  .logo {
+    padding: 15px 17px 6px 10px;
+  }
+  .secondnav nav ul li {
+    position: relative;
+    left: 150px;
+    bottom: 182px;
+  }
+}
