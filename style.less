@@ -14,6 +14,19 @@ body {
 .dropdown {
     margin: @var0 auto;
     float : left;
+
+    @media (max-width:767)
+    {
+    #iconbar
+    {
+        font-size: 22px;
+    position: absolute;
+    top: 19px;
+    right: 18px;
+    opacity: 1;
+    visibility: hidden;
+    }
+}
 }
 
 nav {
@@ -579,7 +592,7 @@ nav {
 
 //for mobile  small:320
 
-@media (min-width:320px)
+@media (max-width:767px)
 {
 .logo
 {
@@ -593,8 +606,62 @@ nav {
     bottom: 182px;
 }
 
+.solution
+{
+    position: absolute;
+    display: grid;
+    /* height: 100%; */
+    width: 100%;
+
+    li 
+    {
+    //     top: 64px;
+    // position: relative;
+    // right: 170px;
+    background-color: #0a0347;
+    a
+    {
+        color:white;
+        border: 1px solid
+    }
+    }
 }
 
+#iconbar
+{
+    font-size: 22px;
+    position: absolute;
+    top: 19px;
+    right: 18px;
+    
+
+}
+// .dropdown nav ul 
+// {
+//     opacity: 0;
+//     visibility: hidden;
+// }
+// .solution .responsive
+// {
+//     ul 
+//     {
+//         opacity: 1;
+//         visibility: visible;
+//     }
+
+// }
+
+// .solution {
+//     position: absolute;
+//     /* background-color: #0a0347; */
+//     display: grid;
+//     /* height: 100%; */
+//     width: 100%;
+//     } 
+    
+//     .solution li {
+//     background-color: #7769dd;
+//     }
 
 
-
+}

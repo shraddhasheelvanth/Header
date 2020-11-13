@@ -62,7 +62,20 @@ jQuery(function(){
     // jQuery('.content').show();
     
 });
- 
+  
+function responsive_menu()
+{
+    var e=document.getElementById('menu');
+    if(e.className === 'solution')
+    {
+       e. className += "responsive";
+    }
+    else{
+        e.className='solution';
+    }
+
+    }
+
 
 
 

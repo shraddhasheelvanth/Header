@@ -9,6 +9,16 @@ body {
   margin: 0px auto;
   float: left;
 }
+@media (max-width: 767) {
+  .dropdown #iconbar {
+    font-size: 22px;
+    position: absolute;
+    top: 19px;
+    right: 18px;
+    opacity: 1;
+    visibility: hidden;
+  }
+}
 nav {
   height: 60px;
   background: white;
@@ -402,7 +412,7 @@ nav ul li a {
   position: relative;
   right: 130px;
 }
-@media (min-width: 320px) {
+@media (max-width: 767px) {
   .logo {
     padding: 15px 17px 6px 10px;
   }
@@ -410,5 +420,24 @@ nav ul li a {
     position: relative;
     left: 150px;
     bottom: 182px;
+  }
+  .solution {
+    position: absolute;
+    display: grid;
+    /* height: 100%; */
+    width: 100%;
+  }
+  .solution li {
+    background-color: #0a0347;
+  }
+  .solution li a {
+    color: white;
+    border: 1px solid;
+  }
+  #iconbar {
+    font-size: 22px;
+    position: absolute;
+    top: 19px;
+    right: 18px;
   }
 }
