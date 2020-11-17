@@ -11,10 +11,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
 
-
-
-
-
 </head>
 
 <body>
@@ -23,16 +19,16 @@
             <img class="logo" role="img" src="download1.jpg">
             <ul class="solution" id="menu">
 
-                <li class="first"><a href="#">Solutions <i class="fa fa-caret-down"></i>
+                <li class="first" id="first"><a href="#">Solutions <i class="dropicon fa fa-caret-down"></i><i class="angleright1 fas fa-angle-right"></i>
                         <ul class="drop">
                             <li>
                                 <hr>
                                 <h3 style="color:white;">Solutions</h3>
 
-                                <div class="sol-sidemenuconent">Overview</div>
-                                <div class="sol-sidemenuconent">Accepatance</div>
+                                <div class="sol-sidemenuconent" id="showall-overview">Overview</div>
+                                <div class="sol-sidemenuconent" id="showall-accepatance">Accepatance</div>
                                 <div class="sol-sidemenuconent" id="showall">Payment Solutions
-                                    <i class="angleright fas fa-angle-right"></i>
+                                    <i class="angleright fas fa-angle-right"></i><i class="angleright2 fas fa-angle-right"></i>
                                     <div class="sol-payments">
                                         <hr class="line">
                                         <h1>Payments Solutions</h1>
@@ -99,8 +95,8 @@
 
                                         <div class="Payment-div3">
                                             <div class="Payment-div3-div1">
-                                                <span style="color:deepskyblue">close <i
-                                                        class="fas fa-times"></i></span>
+                                                <span style="color:deepskyblue">close 
+                                                    <i class="fas fa-times"></i></span>
                                             </div>
                                             <div class="Payment-div3-div2">
                                                 <img src="./download4.jpg" role="img">
@@ -113,13 +109,13 @@
                                     </div>
 
                                 </div>
-                                <div class="sol-sidemenuconent">Fraud Prevention <i
-                                        class="angleright fas fa-angle-right"></i>
+                                <div class="sol-sidemenuconent" id="showall-fraud">Fraud Prevention <i
+                                        class="angleright fas fa-angle-right"></i><i class="angleright2 fas fa-angle-right"></i>
                                 </div>
-                                <div class="sol-sidemenuconent">PCI compliance <i
-                                        class="angleright fas fa-angle-right"></i></div>
+                                <div class="sol-sidemenuconent" id="showall-pci">PCI compliance <i
+                                        class="angleright fas fa-angle-right"></i><i class="angleright2 fas fa-angle-right"></i></div>
                                 <div class="sol-sidemenuconent" id="showall-commerce">Commerce <i
-                                        class="angleright fas fa-angle-right"></i>
+                                        class="angleright fas fa-angle-right"></i><i class="angleright2 fas fa-angle-right"></i>
 
                                     <div class="sol-commerce">
                                         <hr class="line">
@@ -149,16 +145,16 @@
 
                                     </div>
                                 </div>
-                                <div class="sol-sidemenuconent">Card Programs and Issuing <i
-                                        class="angleright fas fa-angle-right"></i></div>
-                                <div class="sol-sidemenuconent">Enterprise Payments <i
-                                        class="angleright fas fa-angle-right"></i>
+                                <div class="sol-sidemenuconent" id="showall-card">Card Programs and Issuing <i
+                                        class="angleright fas fa-angle-right"></i><i class="angleright2 fas fa-angle-right"></i></div>
+                                <div class="sol-sidemenuconent" id="showall-enterprise">Enterprise Payments <i
+                                        class="angleright fas fa-angle-right"></i><i class="angleright2 fas fa-angle-right"></i>
                                 </div>
-                                <div class="sol-sidemenuconent">Debit Networks and ATM Solutions</div>
-                                <div class="sol-sidemenuconent">Collabaration and Co-creation <i
-                                        class="angleright fas fa-angle-right"></i></div>
-                                <div class="sol-sidemenuconent">Technology and Payment platforms <i
-                                        class="angleright fas fa-angle-right"></i></div>
+                                <div class="sol-sidemenuconent" id="showall-debit">Debit Networks and ATM Solutions</div>
+                                <div class="sol-sidemenuconent" id="showall-collabaration">Collabaration and Co-creation <i
+                                        class="angleright fas fa-angle-right"></i><i class="angleright2 fas fa-angle-right"></i></div>
+                                <div class="sol-sidemenuconent" id="showall-tech">Technology and Payment platforms <i
+                                        class="angleright fas fa-angle-right"></i><i class="angleright2 fas fa-angle-right"></i></div>
 
 
 
@@ -176,7 +172,7 @@
                     </a>
                 </li>
 
-                <li class="second"><a href="#">Resources <i class="fa fa-caret-down"></i>
+                <li class="second" id="second"><a href="#">Resources <i class="dropicon fa fa-caret-down"></i><i class="angleright1 fas fa-angle-right"></i>
                         <ul class="drop2">
                             <li>
                                 <hr>
@@ -270,7 +266,7 @@
                     </a>
                 </li>
 
-                <li class="third"><a href="#">Our Network <i class="fa fa-caret-down"></i>
+                <li class="third" id="third"><a href="#">Our Network <i class="dropicon fa fa-caret-down"></i><i class="angleright1 fas fa-angle-right"></i>
                         <ul class="drop3">
                             <div>
                                 <h3 style="color:white;">Our Networks</h4>
@@ -288,13 +284,14 @@
 
                         </ul>
                     </a></li>
-                <li><a href="#">Insights</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li id="fourth"><a href="#">Insights</a></li>
+                <li id="fifth"><a href="#">Contact Us</a></li>
 
             </ul>
 
         </nav>
-        <a href="#" id="iconbar" onclick="responsive_menu()"><i class="fas fa-bars"></i></a>
+        <a href="#" id="iconbar" onclick="responsive_menu()"><i class="fas fa-bars"></i><br></a>
+        <a href="#" id="close" onclick="close_menu()"><i class="fas fa-times"></i></a>
     </div>
     <div class="secondnav">
         <nav>
@@ -303,11 +300,24 @@
                     <a href="#" class="dropdown-toggle mobile-accessibility preventDefaultBehaviour"
                         data-toggle="dropdown">
                         <i class="fa fa-fw fa-search"></i> Search</a></li>
-          <li class="login"><a href="#"><i class='far fa-user'></i> Log In</a></li>
+          <!-- <li class="login"><a href="#"><i class='far fa-user'></i> Log In</a></li> -->
 
             </ul>
         </nav>
     </div>
+    <div class="thirdnav">
+ <nav>
+ <ul>
+ <!-- <li class="search dropdown search-tab desktop-search">
+ <a href="#" class="dropdown-toggle mobile-accessibility preventDefaultBehaviour"
+ data-toggle="dropdown">
+ <i class="fa fa-search"></i>Search</a></li> -->
+ <li class="login"><a href="#"><i class='far fa-user'></i> Log In</a></li>
+ 
+ </ul>
+ </nav>
+ </div>
+    
 
 
 </body>
