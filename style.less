@@ -15,22 +15,24 @@ body {
     margin: @var0 auto;
     float : left;
 
-    @media (max-width:767)
-    {
-    #iconbar
-    {
-        font-size: 22px;
-    position: absolute;
-    top: 19px;
-    right: 18px;
-    opacity: 1;
-    visibility: hidden;
+    #iconbar {
+        font-size : 22px;
+        position  : absolute;
+        top       : 19px;
+        right     : 18px;
+        opacity   : 0;
+        visibility: hidden;
     }
-}
+
+    #close {
+        opacity   : 0;
+        visibility: hidden;
+    }
+
 }
 
 nav {
-    height    : @var1;
+    // height    : @var1;
     background: @color3;
     box-sizing: @var0 @var2 @var3 rgba(0, 0, 0, 0.1);
     width     : @var10;
@@ -116,6 +118,7 @@ nav {
                 position : relative;
                 left     : 55px;
             }
+            
 
 
             .sol-payments {
@@ -362,6 +365,11 @@ nav {
                 position : relative;
                 left     : 147px;
             }
+            .angleright2
+            {
+                opacity: 0;
+                visibility: hidden;
+            }
 
 
             .res-payments {
@@ -540,6 +548,11 @@ nav {
     display: block;
 }
 
+.angleright1 {
+    opacity   : 0;
+    visibility: hidden;
+}
+
 
 .content {
     width   : @var32;
@@ -588,80 +601,191 @@ nav {
     }
 }
 
+.thirdnav ul li {
+    position        : relative;
+    left            : 50px;
+    background-color: #e1eff5;
+}
+
 //Media Queries................................
 
 //for mobile  small:320
 
-@media (max-width:767px)
-{
-.logo
-{
-    padding: 15px 17px 6px 10px;
+@media (max-width:767px) {
+    .logo {
+        padding: 15px 17px 6px 10px;
 
-}
-
-.secondnav nav ul li {
-    position: relative;
-    left: 150px;
-    bottom: 182px;
-}
-
-.solution
-{
-    position: absolute;
-    display: grid;
-    /* height: 100%; */
-    width: 100%;
-
-    li 
-    {
-    //     top: 64px;
-    // position: relative;
-    // right: 170px;
-    background-color: #0a0347;
-    a
-    {
-        color:white;
-        border: 1px solid
     }
+
+    .secondnav nav ul li {
+        position   : relative;
+        left       : 90px;
+        // bottom  : 182px;
     }
-}
 
-#iconbar
-{
-    font-size: 22px;
-    position: absolute;
-    top: 19px;
-    right: 18px;
+    .solution {
+        position : absolute;
+        display  : grid;
+        /* height: 100%; */
+        width    : 100%;
+        display  : none;
+
+        li {
+            //     top: 64px;
+            // position: relative;
+            // right: 170px;
+            background-color: #0a0347;
+            width           : 100%;
+
+            a {
+                color      : white;
+                border     : 1px solid;
+                font-family: sans-serif;
+                font-weight: lighter;
+            }
+        }
+    }
+
+    #iconbar {
+        font-size : 22px !important;
+        position  : absolute !important;
+        top       : 19px !important;
+        right     : 18px !important;
+        opacity   : 1 !important;
+        visibility: visible !important;
+
+
+    }
+
+    #close {
+        font-size : 22px !important;
+        position  : absolute !important;
+        top       : 19px !important;
+        right     : 18px !important;
+        opacity   : 0 !important;
+        visibility: hidden !important;
+    }
+
+    // .dropdown nav ul 
+    // {
+    //     opacity: 0;
+    //     visibility: hidden;
+    // }
+    // .solution .responsive
+    // {
+    //     ul 
+    //     {
+    //         opacity: 1;
+    //         visibility: visible;
+    //     }
+
+    // }
+
+    // .solution {
+    //     position: absolute;
+    //     /* background-color: #0a0347; */
+    //     display: grid;
+    //     /* height: 100%; */
+    //     width: 100%;
+    //     } 
+
+    //     .solution li {
+    //     background-color: #7769dd;
+    //     }
+    .angleright1 {
+        opacity   : 1;
+        visibility: visible;
+        float     : right;
+        top       : 21px;
+        position  : relative;
+        right     : 15px;
+    }
     
+    .angleright2
+    {
+        opacity: 1;
+        visibility: visible;
+        float: right;
+        top: 8px;
+        position: relative;
+        right: 435px;
+    }
+
+
+
+    .drop {
+        width : 717px;
+        height: 529px;
+    }
+    .content{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .dropicon {
+        opacity   : 0;
+        visibility: hidden;
+    }
+
+    .first {
+        ul {
+            li {
+                hr {
+                    position: relative;
+                    right   : 384px;
+                }
+
+                h3 {
+                    position: relative;
+                    right   : 37px;
+                }
+            }
+        }
+
+    }
+
+
+    .sol-sidemenuconent {
+        position: relative;
+        right   : 37px;
+
+    }
+
+    .second {
+        ul {
+            li {
+                hr {
+                    position: relative;
+                    right   : 229px;
+                }
+
+                h3 {
+                    position: relative;
+                    right   : 37px;
+                }
+            }
+        }
+
+    }
+
+    .res-sidemenuconent {
+        position: relative;
+        right   : 37px;
+    }
+
+    .thirdnav nav ul li {
+        position                 : relative;
+        // top: 311px;
+        top                      : 626px;
+        left                     : -130px;
+        //     position: absolute;
+        // top: 450px;
+        //  /* border-right-width: 70px; */
+        // left: 100px;
+    }
+
 
 }
-// .dropdown nav ul 
-// {
-//     opacity: 0;
-//     visibility: hidden;
-// }
-// .solution .responsive
-// {
-//     ul 
-//     {
-//         opacity: 1;
-//         visibility: visible;
-//     }
-
-// }
-
-// .solution {
-//     position: absolute;
-//     /* background-color: #0a0347; */
-//     display: grid;
-//     /* height: 100%; */
-//     width: 100%;
-//     } 
-    
-//     .solution li {
-//     background-color: #7769dd;
-//     }
 
 
-}
+@media (max-width:1279px) {}
