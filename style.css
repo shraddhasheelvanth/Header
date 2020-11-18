@@ -93,16 +93,16 @@ nav ul li a {
 }
 .drop li .sol-sidemenuconent .sol-payments .Payment-div1 .sol-sub1-payments p {
   line-height: 18px;
-  font-weight: lighter;
-  color: black;
+  font-weight: lighter !important;
+  color: black !important;
 }
 .drop li .sol-sidemenuconent .sol-payments .Payment-div1 .sol-sub1-payments h3 {
-  color: deepskyblue;
+  color: deepskyblue !important;
   line-height: 5px;
-  margin: 0px;
+  margin: 0px !important;
 }
 .drop li .sol-sidemenuconent .sol-payments .Payment-div1 .sol-sub1-payments h3 i {
-  color: orange;
+  color: orange !important;
 }
 .drop li .sol-sidemenuconent .sol-payments .Payment-div2 {
   width: 400px;
@@ -256,8 +256,8 @@ nav ul li a {
   left: 147px;
 }
 .drop2 li .res-sidemenuconent .angleright2 {
-  opacity: 0;
-  visibility: hidden;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 .drop2 li .res-sidemenuconent .res-payments {
   width: 400px;
@@ -387,6 +387,10 @@ nav ul li a {
   opacity: 0;
   visibility: hidden;
 }
+.angleft1 {
+  opacity: 0;
+  visibility: hidden;
+}
 .content {
   width: 400px;
   position: absolute;
@@ -444,12 +448,14 @@ nav ul li a {
   .solution li {
     background-color: #0a0347;
     width: 100%;
+    height: 88px;
   }
   .solution li a {
-    color: white;
-    border: 1px solid;
+    color: #b9b5b5;
     font-family: sans-serif;
     font-weight: lighter;
+    height: 100px;
+    display: initial;
   }
   #iconbar {
     font-size: 22px !important;
@@ -483,9 +489,25 @@ nav ul li a {
     position: relative;
     right: 435px;
   }
+  .angleft1 {
+    opacity: 1;
+    visibility: visible;
+  }
   .drop {
-    width: 717px;
+    width: 768px;
     height: 529px;
+  }
+  .drop li hr {
+    position: relative;
+    right: 408px;
+  }
+  .drop li h3 {
+    position: relative;
+    right: 35px;
+  }
+  .sol-sidemenuconent {
+    position: relative;
+    right: 35px;
   }
   .content {
     opacity: 0;
@@ -495,25 +517,46 @@ nav ul li a {
     opacity: 0;
     visibility: hidden;
   }
-  .first ul li hr {
-    position: relative;
-    right: 384px;
+  .sol-sidemenuconent .sol-payments hr {
+    display: none;
   }
-  .first ul li h3 {
-    position: relative;
-    right: 37px;
+  .sol-sidemenuconent .sol-payments h1 {
+    display: none;
   }
-  .sol-sidemenuconent {
+  .sol-sidemenuconent .sol-payments .Payment-div1 {
+    top: 170px;
     position: relative;
-    right: 37px;
+    right: 363px;
   }
-  .second ul li hr {
-    position: relative;
-    right: 229px;
+  .sol-sidemenuconent .sol-payments .Payment-div1 .sol-sub1-payments p {
+    display: none;
   }
-  .second ul li h3 {
+  .sol-sidemenuconent .sol-payments .Payment-div1 .sol-sub1-payments h3 {
+    line-height: 82px;
+    top: -81px;
     position: relative;
-    right: 37px;
+    line-height: 41px !important;
+    font-size: 15px !important;
+  }
+  .sol-sidemenuconent .sol-payments .Payment-div2 {
+    top: 175px !important;
+    position: relative !important;
+    /* right: 405px !important; */
+    left: -361px !important;
+    display: block;
+  }
+  .sol-sidemenuconent .sol-payments .Payment-div2 .sol-sub1-payments p {
+    display: none;
+  }
+  .sol-sidemenuconent .sol-payments .Payment-div2 .sol-sub1-payments h3 {
+    line-height: 82px;
+    top: -81px;
+    position: relative;
+    line-height: 41px !important;
+    font-size: 15px !important;
+  }
+  .sol-sidemenuconent .sol-payments .Payment-div3 {
+    display: none;
   }
   .res-sidemenuconent {
     position: relative;

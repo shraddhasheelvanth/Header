@@ -118,7 +118,7 @@ nav {
                 position : relative;
                 left     : 55px;
             }
-            
+
 
 
             .sol-payments {
@@ -138,18 +138,18 @@ nav {
                 .Payment-div1 .sol-sub1-payments {
 
                     p {
-                        line-height: @var38;
-                        font-weight: lighter;
-                        color      : @color4;
+                        line-height: @var38 ;
+                        font-weight: lighter !important;
+                        color      : @color4 !important;
                     }
 
                     h3 {
-                        color      : @color10;
-                        line-height: @var4;
-                        margin     : @var0;
+                        color      : @color10 !important;
+                        line-height: @var4 ;
+                        margin     : @var0 !important;
 
                         i {
-                            color: orange;
+                            color: orange !important;
                         }
                     }
                 }
@@ -365,10 +365,10 @@ nav {
                 position : relative;
                 left     : 147px;
             }
-            .angleright2
-            {
-                opacity: 0;
-                visibility: hidden;
+
+            .angleright2 {
+                opacity   : 0 !important;
+                visibility: hidden !important;
             }
 
 
@@ -553,6 +553,11 @@ nav {
     visibility: hidden;
 }
 
+.angleft1 {
+    opacity   : 0;
+    visibility: hidden;
+}
+
 
 .content {
     width   : @var32;
@@ -636,14 +641,15 @@ nav {
             // right: 170px;
             background-color: #0a0347;
             width           : 100%;
+            height: 88px;
 
             a {
-                color: #b9b5b5;
+                color         : #b9b5b5;
                 // border     : 1px solid;
-                font-family: sans-serif;
-                font-weight: lighter;
-                height: 100px;
-                display: initial;
+                font-family   : sans-serif;
+                font-weight   : lighter;
+                height        : 100px;
+                display       : initial;
             }
         }
     }
@@ -668,32 +674,6 @@ nav {
         visibility: hidden !important;
     }
 
-    // .dropdown nav ul 
-    // {
-    //     opacity: 0;
-    //     visibility: hidden;
-    // }
-    // .solution .responsive
-    // {
-    //     ul 
-    //     {
-    //         opacity: 1;
-    //         visibility: visible;
-    //     }
-
-    // }
-
-    // .solution {
-    //     position: absolute;
-    //     /* background-color: #0a0347; */
-    //     display: grid;
-    //     /* height: 100%; */
-    //     width: 100%;
-    //     } 
-
-    //     .solution li {
-    //     background-color: #7769dd;
-    //     }
     .angleright1 {
         opacity   : 1;
         visibility: visible;
@@ -702,25 +682,47 @@ nav {
         position  : relative;
         right     : 15px;
     }
-    
-    .angleright2
-    {
-        opacity: 1;
+
+    .angleright2 {
+        opacity   : 1;
         visibility: visible;
-        float: right;
-        top: 8px;
-        position: relative;
-        right: 435px;
+        float     : right;
+        top       : 8px;
+        position  : relative;
+        right     : 435px;
+    }
+
+    .angleft1 {
+        opacity   : 1;
+        visibility: visible;
     }
 
 
 
     .drop {
-        width : 717px;
+        width : 768px;
         height: 529px;
+
+        li {
+            hr
+            {
+                position: relative;
+    right: 408px;
+            }
+            h3{
+                position: relative;
+                right: 35px;
+            }
+        }
     }
-    .content{
-        opacity: 0;
+    .sol-sidemenuconent
+    {
+        position: relative;
+        right: 35px;
+    }
+
+    .content {
+        opacity   : 0;
         visibility: hidden;
     }
 
@@ -729,46 +731,131 @@ nav {
         visibility: hidden;
     }
 
-    .first {
-        ul {
-            li {
-                hr {
-                    position: relative;
-                    right   : 384px;
-                }
+    // .first {
+    //     ul {
+    //         li {
+    //             hr {
+    //                 position: relative;
+    //                 right   : 384px;
+    //             }
 
-                h3 {
-                    position: relative;
-                    right   : 37px;
-                }
-            }
-        }
+    //             h3 {
+    //                 position: relative;
+    //                 right   : 37px;
+    //             }
+    //         }
+    //     }
 
-    }
+    // }
 
 
     .sol-sidemenuconent {
-        position: relative;
-        right   : 37px;
+        // position: relative;
+        // right   : 37px;
+        
 
-    }
+        
 
-    .second {
-        ul {
-            li {
-                hr {
-                    position: relative;
-                    right   : 229px;
-                }
+        .sol-payments {
+    //         position: absolute !important;
+   
+    // left: -239px !important;
+    // top: -71px !important;
 
-                h3 {
-                    position: relative;
-                    right   : 37px;
+            hr {
+                display: none;
+            }
+
+            h1 {
+                display: none;
+            }
+
+            .Payment-div1 {
+                top     : 170px;
+                position: relative;
+                right   : 363px;
+
+                .sol-sub1-payments {
+                    p {
+                        display: none;
+                    }
+
+                    h3 {
+                        line-height: 82px;
+                        top        : -81px;
+                        position   : relative;
+                        line-height: 41px !important;
+                        font-size  : 15px !important;
+                    }
                 }
             }
-        }
 
-    }
+            .Payment-div2 {
+                top     : 175px !important;
+                position: relative !important;
+                /* right: 405px !important; */
+                left    : -361px !important;
+                display: block;
+
+                .sol-sub1-payments {
+                    p {
+                        display: none;
+                    }
+
+                    h3 {
+                        line-height: 82px;
+                        top        : -81px;
+                        position   : relative;
+                        line-height: 41px !important;
+                        font-size  : 15px !important;
+                    }
+                }
+            }
+
+            .Payment-div3 {
+                display: none;
+            }
+
+        }
+     }
+
+
+    
+    // #showall
+    //     {
+    //         font-size: 26px !important;
+    // position: relative !important;
+    // /* bottom: -11px; */
+    // top: 20px !important;
+    // color: white !important;
+    //     }
+    // .rightarrow
+    // {
+    //     display: none;
+    // }
+
+    // .second {
+    //     ul {
+    //         li {
+    //             hr {
+    //                 position: relative;
+    //                 right   : 229px;
+    //             }
+
+    //             h3 {
+    //                 position: relative;
+    //                 right   : 37px;
+    //             }
+    //         }
+    //     }
+
+    // }
+
+    // .pay-sol
+    // {
+    //     font-size:25px;
+    //     color: white;
+    // }
 
     .res-sidemenuconent {
         position: relative;
@@ -787,7 +874,6 @@ nav {
     }
 
 
+
 }
 
-
-@media (max-width:1279px) {}
