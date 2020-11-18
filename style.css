@@ -430,6 +430,14 @@ nav ul li a {
   left: 50px;
   background-color: #e1eff5;
 }
+#line2 {
+  opacity: 0;
+  visibility: hidden;
+}
+#line3 {
+  opacity: 0;
+  visibility: hidden;
+}
 @media (max-width: 767px) {
   .logo {
     padding: 15px 17px 6px 10px;
@@ -508,6 +516,7 @@ nav ul li a {
   .sol-sidemenuconent {
     position: relative;
     right: 35px;
+    top: 40px;
   }
   .content {
     opacity: 0;
@@ -566,5 +575,23 @@ nav ul li a {
     position: relative;
     top: 626px;
     left: -130px;
+  }
+  #line2 {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    position: relative;
+    left: -49px;
+    border-style: solid;
+    color: orange;
+  }
+  #line3 {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    position: relative;
+    left: -49px;
+    border-style: solid;
+    color: orange;
   }
 }

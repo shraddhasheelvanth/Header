@@ -114,6 +114,7 @@ if (window.matchMedia('(max-width: 768px)').matches)
     jQuery(function(){
         jQuery('#showall').click(function(){
             jQuery('#heading').hide();
+            jQuery('#line2').hide();
             jQuery('.arrowright').hide();
             jQuery('.angleright2').hide();
             jQuery('.angleright').hide();
